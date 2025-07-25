@@ -24,21 +24,24 @@
     <header>
         <!-- navigation  -->
         <nav class="max-w-7xl mx-auto flex justify-between items-center my-3">
-            <div class="flex gap-8">
+            <div class="flex ml-5 gap-2.5 lg:gap-8">
+                <button class="lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <h2 class="text-primaary font-bold text-xl">Streamr</h2>
-                <ul class="flex gap-9">
+                <ul class="hidden lg:flex gap-9">
                     <li><a href="">Home</a></li>
                     <li><a href="">Movies</a></li>
                     <li><a href="">Web-Series</a></li>
                     <li><a href="">Kids</a></li>
                 </ul>
             </div>
-            <div class="flex items-center gap-8">
+            <div class="flex mr-5 items-center gap-8">
                 <form action="" class="bg-btn-color rounded-xl relative text-[#82696B]">
-                    <i class="fa-solid fa-magnifying-glass absolute top-3.5 left-3 text-lg"></i>
-                    <input class="py-2.5 px-10" type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass md:absolute top-3.5 left-3 text-lg"></i>
+                    <input class="py-2.5 px-10 hidden md:block" type="text" placeholder="Search">
                 </form>
-                <button class="bg-btn-color rounded-xl p-2.5 cursor-pointer">
+                <button class="bg-btn-color rounded-xl p-2.5 cursor-pointer hidden md:block">
                     <i class="fa-solid fa-bookmark"></i>
                 </button>
 
@@ -61,6 +64,184 @@
             </div>
         </section>
     </header>
+    <main>
+        <!-- tranding section  -->
+        <section class="max-w-5xl mx-auto my-6 p-5">
+            <h2 class="font-bold text-2xl">Trending Movies</h2>
+            <div class="mt-4 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+                <div class="card max-w-72 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                    <figure class="w-full rounded-2xl">
+                        <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                    </figure>
+                    <div class="p-2.5 flex flex-col gap-1">
+                        <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                        <ul class="flex gap-1.5 text-gray-500 font-medium">
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Action
+                            </li>
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Adventure
+                            </li>
+                        </ul>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star-half text-yellow-600"></i>
+                            <span>4.3</span>
+                        </div>
+                        <div class="flex justify-between font-medium">
+                            <p>Dec 2025</p>
+                            <p>3h 20m</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card max-w-72 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                    <figure class="w-full rounded-2xl">
+                        <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                    </figure>
+                    <div class="p-2.5 flex flex-col gap-1">
+                        <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                        <ul class="flex gap-1.5 text-gray-500 font-medium">
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Action
+                            </li>
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Adventure
+                            </li>
+                        </ul>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star-half text-yellow-600"></i>
+                            <span>4.3</span>
+                        </div>
+                        <div class="flex justify-between font-medium">
+                            <p>Dec 2025</p>
+                            <p>3h 20m</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card max-w-72 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                    <figure class="w-full rounded-2xl">
+                        <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                    </figure>
+                    <div class="p-2.5 flex flex-col gap-1">
+                        <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                        <ul class="flex gap-1.5 text-gray-500 font-medium">
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Action
+                            </li>
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Adventure
+                            </li>
+                        </ul>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star-half text-yellow-600"></i>
+                            <span>4.3</span>
+                        </div>
+                        <div class="flex justify-between font-medium">
+                            <p>Dec 2025</p>
+                            <p>3h 20m</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card max-w-72 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                    <figure class="w-full rounded-2xl">
+                        <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                    </figure>
+                    <div class="p-2.5 flex flex-col gap-1">
+                        <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                        <ul class="flex gap-1.5 text-gray-500 font-medium">
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Action
+                            </li>
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Adventure
+                            </li>
+                        </ul>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star-half text-yellow-600"></i>
+                            <span>4.3</span>
+                        </div>
+                        <div class="flex justify-between font-medium">
+                            <p>Dec 2025</p>
+                            <p>3h 20m</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card max-w-72 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                    <figure class="w-full rounded-2xl">
+                        <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                    </figure>
+                    <div class="p-2.5 flex flex-col gap-1">
+                        <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                        <ul class="flex gap-1.5 text-gray-500 font-medium">
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Action
+                            </li>
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Adventure
+                            </li>
+                        </ul>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star-half text-yellow-600"></i>
+                            <span>4.3</span>
+                        </div>
+                        <div class="flex justify-between font-medium">
+                            <p>Dec 2025</p>
+                            <p>3h 20m</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card max-w-72 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                    <figure class="w-full rounded-2xl">
+                        <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                    </figure>
+                    <div class="p-2.5 flex flex-col gap-1">
+                        <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                        <ul class="flex gap-1.5 text-gray-500 font-medium">
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Action
+                            </li>
+                            <li><span class="text-[10px] mr-0.5"><i class="fa-solid fa-circle-dot"></i></span>Adventure
+                            </li>
+                        </ul>
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star text-yellow-600"></i>
+                            <i class="fa-solid fa-star-half text-yellow-600"></i>
+                            <span>4.3</span>
+                        </div>
+                        <div class="flex justify-between font-medium">
+                            <p>Dec 2025</p>
+                            <p>3h 20m</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
 
 
 </body>
