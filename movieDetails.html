@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Movie List Web App</title>
+    <link rel="stylesheet" href="tailwind.css">
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primaary: #171212;
+            --color-btn-color: #F5F2F2;
+            --color-watch-btn: #E8B5B8;
+            --color-category: #82696B
+        }
+    </style>
+    <title>Movie Details</title>
+</head>
+
+<body>
+    <header>
+        <!-- navigation  -->
+        <nav class="max-w-7xl mx-auto flex justify-between items-center my-3">
+            <div class="flex ml-5 gap-2.5 lg:gap-8">
+                <button class="lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h2 class="text-primaary font-bold text-xl">Streamr</h2>
+                <ul class="hidden lg:flex gap-9">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Movies</a></li>
+                    <li><a href="">Web-Series</a></li>
+                    <li><a href="">Kids</a></li>
+                </ul>
+            </div>
+            <div class="flex mr-5 items-center gap-8">
+                <form action="" class="bg-btn-color rounded-xl relative text-[#82696B]">
+                    <i class="fa-solid fa-magnifying-glass md:absolute top-3.5 left-3 text-lg"></i>
+                    <input class="py-2.5 px-10 hidden md:block" type="text" placeholder="Search">
+                </form>
+                <button class="bg-btn-color rounded-xl p-2.5 cursor-pointer hidden md:block">
+                    <i class="fa-solid fa-bookmark"></i>
+                </button>
+
+                <figure class="w-12 h-12 cursor-pointer">
+                    <img class=" w-full h-full rounded-[50%]" src="./assets/user.jpg" alt="">
+                </figure>
+
+            </div>
+        </nav>
+        <hr class="text-[#F5F2F2]">
+    </header>
+    <main>
+        <section class="max-w-6xl mx-auto my-6 p-5">
+            <figure class="mb-3">
+                <img class="w-full" src="./assets/play-movie.png" alt="">
+            </figure>
+            <div class="mx-3 my-6">
+                <h2 class="font-bold text-2xl mb-3">The Last Stand</h2>
+                <p>A seasoned sheriff, Ray Owens, finds his quiet life disrupted when a notorious drug kingpin escapes
+                    from custody and heads towards the US-Mexico border. With the help of his deputies, Owens must make
+                    a stand to stop the criminal and his gang from crossing the border.</p>
+
+                <table class="w-full my-3">
+                    <tbody class="text-left text-sm">
+                        <tr class="border-t border-gray-300">
+                            <th class="text-category py-3">Genre</th>
+                            <td>Action, Thriller</td>
+                        </tr>
+                        <tr class="border-t border-gray-300">
+                            <th class="text-category py-3">Release Year</th>
+                            <td>2013</td>
+                        </tr>
+                        <tr class="border-t border-gray-300">
+                            <th class="text-category py-3">Runtime</th>
+                            <td>3h 47m</td>
+                        </tr>
+                        <tr class="border-t border-gray-300">
+                            <th class="text-category py-3">IMDb Rating</th>
+                            <td>8.3/10</td>
+                        </tr>
+                        <tr class="border-t border-gray-300">
+                            <th class="text-category py-3">Cast</th>
+                            <td>Mark Johnson, Jamie Lee, Peter Evans</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <div class="flex gap-3 my-6">
+                    <button class="py-2.5 px-4 rounded-3xl bg-watch-btn font-bold text-sm cursor-pointer">Watch
+                        Trailer</button>
+                    <button class="py-2.5 px-4 rounded-3xl bg-btn-color font-bold text-sm cursor-pointer">Watch
+                        Now</button>
+                </div>
+
+                <div class="my-6">
+                    <h2 class="font-bold text-2xl mb-3">Related movies</h2>
+                    <div class="mt-4 grid grid-cols-2 lg:grid-cols-4 place-items-start">
+                        <div class="card max-w-40 lg:max-w-56 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                            <figure class="w-full rounded-2xl">
+                                <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                            </figure>
+                            <div class="p-2.5 flex flex-col gap-1">
+                                <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                                <ul class="flex gap-1.5 text-gray-500 font-medium">
+                                    <li><span class="text-[10px] mr-0.5"><i
+                                                class="fa-solid fa-circle-dot"></i></span>Action
+                                    </li>
+                                    <li><span class="text-[10px] mr-0.5"><i
+                                                class="fa-solid fa-circle-dot"></i></span>Adventure
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star-half text-yellow-600"></i>
+                                    <span>4.3</span>
+                                </div>
+                                <div class="flex justify-between font-medium">
+                                    <p>Dec 2025</p>
+                                    <p>3h 20m</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card max-w-40 lg:max-w-56 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                            <figure class="w-full rounded-2xl">
+                                <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                            </figure>
+                            <div class="p-2.5 flex flex-col gap-1">
+                                <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                                <ul class="flex gap-1.5 text-gray-500 font-medium">
+                                    <li><span class="text-[10px] mr-0.5"><i
+                                                class="fa-solid fa-circle-dot"></i></span>Action
+                                    </li>
+                                    <li><span class="text-[10px] mr-0.5"><i
+                                                class="fa-solid fa-circle-dot"></i></span>Adventure
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star-half text-yellow-600"></i>
+                                    <span>4.3</span>
+                                </div>
+                                <div class="flex justify-between font-medium">
+                                    <p>Dec 2025</p>
+                                    <p>3h 20m</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card max-w-40 lg:max-w-56 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                            <figure class="w-full rounded-2xl">
+                                <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                            </figure>
+                            <div class="p-2.5 flex flex-col gap-1">
+                                <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                                <ul class="flex gap-1.5 text-gray-500 font-medium">
+                                    <li><span class="text-[10px] mr-0.5"><i
+                                                class="fa-solid fa-circle-dot"></i></span>Action
+                                    </li>
+                                    <li><span class="text-[10px] mr-0.5"><i
+                                                class="fa-solid fa-circle-dot"></i></span>Adventure
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star-half text-yellow-600"></i>
+                                    <span>4.3</span>
+                                </div>
+                                <div class="flex justify-between font-medium">
+                                    <p>Dec 2025</p>
+                                    <p>3h 20m</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card max-w-40 lg:max-w-56 rounded-2xl bg-[#F5F2F2] shadow-2xl">
+                            <figure class="w-full rounded-2xl">
+                                <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
+                            </figure>
+                            <div class="p-2.5 flex flex-col gap-1">
+                                <h3 class="font-semibold text-lg"> How to Train Your Dragon</h3>
+                                <ul class="flex gap-1.5 text-gray-500 font-medium">
+                                    <li><span class="text-[10px] mr-0.5"><i
+                                                class="fa-solid fa-circle-dot"></i></span>Action
+                                    </li>
+                                    <li><span class="text-[10px] mr-0.5"><i
+                                                class="fa-solid fa-circle-dot"></i></span>Adventure
+                                    </li>
+                                </ul>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star text-yellow-600"></i>
+                                    <i class="fa-solid fa-star-half text-yellow-600"></i>
+                                    <span>4.3</span>
+                                </div>
+                                <div class="flex justify-between font-medium">
+                                    <p>Dec 2025</p>
+                                    <p>3h 20m</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
