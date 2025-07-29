@@ -57,9 +57,16 @@
 }
 
 @media screen and (max-width: 767.98px) {
+    .search-form.active {
+        position: absolute;
+        top: 64px;
+        left: 20px;
+    }
+
     .search-box {
         display: none;
         transition: all 2s ease;
+        width: calc(100vw - 40px);
     }
 
     .search-box.active {
