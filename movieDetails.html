@@ -23,15 +23,17 @@
 </head>
 
 <body>
+    <div class="layer" id="layer"></div>
     <header>
         <!-- navigation  -->
         <nav class="max-w-7xl mx-auto flex justify-between items-center my-3">
+
             <div class="flex ml-5 gap-2.5 lg:gap-8">
-                <button class="lg:hidden">
+                <button class="lg:hidden hamburger cursor-pointer" id="hamburger">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <h2 class="text-primaary font-bold text-xl">Streamr</h2>
-                <ul class="hidden lg:flex gap-9">
+                <ul class="hidden lg:flex gap-9 side-nav" id="side-nav">
                     <li><a href="">Home</a></li>
                     <li><a href="">Movies</a></li>
                     <li><a href="">Web-Series</a></li>
@@ -39,9 +41,10 @@
                 </ul>
             </div>
             <div class="flex mr-5 items-center gap-8">
-                <form action="" class="bg-btn-color rounded-xl relative text-[#82696B]">
-                    <i class="fa-solid fa-magnifying-glass md:absolute top-3.5 left-3 text-lg"></i>
-                    <input class="py-2.5 px-10 hidden md:block" type="text" placeholder="Search">
+                <form action="" class="bg-btn-color rounded-xl relative text-[#82696B] search-form" id="search-form">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer md:absolute md:top-3.5 md:left-3 text-lg search-icon"
+                        id="search-icon"></i>
+                    <input class="py-2.5 px-10 md:block search-box" id="search-box" type="text" placeholder="Search">
                 </form>
                 <button class="bg-btn-color rounded-xl p-2.5 cursor-pointer hidden md:block">
                     <i class="fa-solid fa-bookmark"></i>
@@ -101,7 +104,7 @@
 
                 <div class="my-6">
                     <h2 class="font-bold text-2xl mb-3">Related movies</h2>
-                    <div class="mt-4 grid grid-cols-2 lg:grid-cols-4 place-items-start">
+                    <div class="mt-4 grid gap-3 grid-cols-2 lg:grid-cols-4 place-items-start">
                         <div class="card max-w-40 lg:max-w-56 rounded-2xl bg-[#F5F2F2] shadow-2xl">
                             <figure class="w-full rounded-2xl">
                                 <img class="w-full h-full rounded-t-2xl" src="./assets/movie1.jpg" alt="">
@@ -231,6 +234,7 @@
 
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
