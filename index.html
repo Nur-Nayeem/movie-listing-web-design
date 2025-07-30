@@ -58,9 +58,39 @@
 
         <!-- hero section  -->
         <section class="max-w-6xl mx-auto my-6 p-5">
-            <figure class="mb-3">
-                <img class="w-full" src="./assets/hero.png" alt="">
-            </figure>
+            <div class="mb-3 relative m-auto">
+                <figure class="slide fade">
+                    <img class="w-full h-[300px] md:h-[400px]" src="./assets/hero.png" alt="">
+                </figure>
+                <figure class="slide fade">
+                    <img class="w-full h-[300px] md:h-[400px]" src="./assets/b.jpeg" alt="">
+                </figure>
+                <figure class="slide fade">
+                    <img class="w-full h-[300px] md:h-[400px]" src="./assets/c.jpeg" alt="">
+                </figure>
+                <figure class="slide fade">
+                    <img class="w-full h-[300px] md:h-[400px]" src="./assets/d.jpeg" alt="">
+                </figure>
+                <a class="hover:bg-[rgba(0,0,0,0.8)] cursor-pointer absolute top-1/2 -mt-5 p-4 text-white font-bold text-lg transition-all duration-500 ease-in"
+                    onclick="plusSlides(-1)">&#10094;</a>
+                <a class="right-0 rounded-l-[3px] hover:bg-[rgba(0,0,0,0.8)] cursor-pointer absolute top-1/2 -mt-5 p-4 text-white font-bold text-lg transition-all duration-500 ease-in"
+                    onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="text-center">
+                <span
+                    class="dot cursor-pointer h-3.5 w-3.5 my-0.5 bg-[#bbb] rounded-full inline-block transition-colors duration-500 ease"
+                    onclick="currentSlide(1)"></span>
+                <span
+                    class="dot cursor-pointer h-3.5 w-3.5 my-0.5 bg-[#bbb] rounded-full inline-block transition-colors duration-500 ease"
+                    onclick="currentSlide(2)"></span>
+                <span
+                    class="dot cursor-pointer h-3.5 w-3.5 my-0.5 bg-[#bbb] rounded-full inline-block transition-colors duration-500 ease"
+                    onclick="currentSlide(3)"></span>
+                <span
+                    class="dot cursor-pointer h-3.5 w-3.5 my-0.5 bg-[#bbb] rounded-full inline-block transition-colors duration-500 ease"
+                    onclick="currentSlide(4)"></span>
+            </div>
+
             <div class="flex gap-3">
                 <button class="py-2.5 px-4 rounded-xl bg-watch-btn font-bold text-sm cursor-pointer">Watch Now</button>
                 <button class="py-2.5 px-4 rounded-xl bg-btn-color font-bold text-sm cursor-pointer">Download</button>
